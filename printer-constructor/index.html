@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D Printer Constructor</title>
+<meta name="description" content="Build a 3D printer from parts: drive the screws, tension the belts, wire every motor, level the bed, then print and see every choice in the model. Free, in your browser, on Windows and Linux.">
+<meta property="og:title" content="3D Printer Constructor">
+<meta property="og:description" content="Build it. Wire it. Print it. A free game about building 3D printers and finding out why prints come out the way they do.">
+<meta property="og:image" content="https://serhiiden.github.io/printer-constructor/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Crect width=%2716%27 height=%2716%27 rx=%273%27 fill=%27%23f3e2c4%27/%3E%3Crect x=%273%27 y=%273%27 width=%2710%27 height=%272%27 fill=%27%235c3d2b%27/%3E%3Crect x=%273%27 y=%275%27 width=%272%27 height=%278%27 fill=%27%23c8601a%27/%3E%3Crect x=%2711%27 y=%275%27 width=%272%27 height=%278%27 fill=%27%23c8601a%27/%3E%3Crect x=%277%27 y=%276%27 width=%272%27 height=%272%27 fill=%27%233b82d6%27/%3E%3C/svg%3E">
+<style>
+  :root { --bg: #f3e2c4; --panel: #fbf1de; --ink: #3b2a1d; --dim: #7a6250; --warm: #c8601a; --line: #e0c9a3; --wood: #5c3d2b; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: system-ui, sans-serif; line-height: 1.6; }
+  a { color: var(--warm); }
+  .hero { display: block; width: 100%; max-width: 1600px; height: auto; margin: 0 auto; }
+  main { max-width: 52rem; margin: 0 auto; padding: 0 1rem 3rem; }
+  h1 { font-size: 2.5rem; letter-spacing: -.01em; margin: 2rem 0 .2rem; }
+  h2 { font-size: 1.4rem; margin: 2.5rem 0 .6rem; }
+  .tag { color: var(--dim); font-size: 1.15rem; margin: 0 0 1.5rem; }
+  .cta { display: inline-block; background: var(--warm); color: #fff; text-decoration: none; font-weight: 600; padding: .7rem 1.4rem; border-radius: 8px; margin: 0 .4rem .4rem 0; }
+  .cta:hover { filter: brightness(1.08); }
+  .cta.alt { background: var(--wood); }
+  .meta { color: var(--dim); font-size: .95rem; margin-top: .6rem; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: .6rem; margin: 1rem 0; }
+  .shots img { width: 100%; display: block; border-radius: 6px; border: 1px solid var(--line); }
+  ul { padding-left: 1.2rem; }
+  li { margin: .2rem 0; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3rem 0; }
+</style>
+</head>
+<body>
+<div style="background:#2a1f17"><img class="hero" src="img/hero.jpg" alt="A Cartesian 3D printer on a wooden workbench, spools of plastic on the shelves"></div>
+<main>
+<h1>3D Printer Constructor</h1>
+<p class="tag">Build it. Wire it. Print it.</p>
+<a class="cta" href="https://serhiiden.itch.io/3d-printer-constructor">Play in your browser on itch.io</a>
+<a class="cta alt" href="https://serhiiden.itch.io/3d-printer-constructor">Download for Windows · Linux</a>
+<p class="meta">Free, pay what you want · Browser · Windows · Linux · 8 languages</p>
+
+<h2>About</h2>
+<p>Build your own 3D printer from scratch, and find out why your prints come out the way they do.</p>
+<p>Pick the frame, motors, belts, hotend and board, drive in screws of the right length, tension the belts, plug every wire into its port, level the bed and run the self-test. Then print, and watch every choice show up in the model: layer shifts from a slack belt, ripples after corners from a wobbly frame, elephant's foot from a nozzle set too low, stringing from a Bowden extruder. After each print the game names every defect and points at the part to blame.</p>
+
+<div class="shots">
+  <a href="img/shot_1.jpg"><img src="img/shot_1.jpg" alt="The order board" loading="lazy"></a>
+  <a href="img/shot_2.jpg"><img src="img/shot_2.jpg" alt="A printer on the workbench" loading="lazy"></a>
+  <a href="img/shot_3.jpg"><img src="img/shot_3.jpg" alt="Wiring the board" loading="lazy"></a>
+  <a href="img/shot_4.jpg"><img src="img/shot_4.jpg" alt="A print's result with its defects" loading="lazy"></a>
+  <a href="img/shot_5.jpg"><img src="img/shot_5.jpg" alt="A CoreXY printer" loading="lazy"></a>
+  <a href="img/shot_6.jpg"><img src="img/shot_6.jpg" alt="The workshop" loading="lazy"></a>
+</div>
+
+<h2>What's inside</h2>
+<ul>
+  <li>Four kinds of printer: Cartesian, CoreXY, Delta and a cantilever</li>
+  <li>50 orders with budgets and requirements — quiet, fast, precise, strong, the right plastic — and a new order every day</li>
+  <li>Repairs: a client brings a broken printer; find the fault from a test print and fix it</li>
+  <li>A service career: fix clients' printers for pay and experience, learn skills that make your hands faster, restore flea-market printers and sell them</li>
+  <li>Dozens of parts with real trade-offs, upgrades, PLA, PETG, ABS and TPU</li>
+  <li>A slicer and firmware: layer height, infill, retraction, supports, e-steps, PID, acceleration, Linear Advance</li>
+  <li>The workshop: your own print farm with a job queue, deadlines and a reputation</li>
+  <li>A free mode — print your own STL models too</li>
+</ul>
+<p>No internet needed. Music and sounds are synthesised right in the game.</p>
+
+<p class="meta">Made with the help of AI (Claude): code and texts. · <a href="privacy/">Privacy policy</a></p>
+
+<hr>
+
+<h2 lang="uk">Українською</h2>
+<div lang="uk">
+<p><strong>Конструктор 3D-принтера</strong> — збери принтер своїми руками: закрути гвинти потрібної довжини, натягни ремені, підключи кожен дріт у свій порт, вирівняй стіл і запусти самотест. Потім друкуй — і дивись, як кожен вибір проявляється в моделі. Після друку гра називає кожен дефект і показує деталь, яка в ньому винна.</p>
+<ul>
+  <li>Чотири типи принтерів: Cartesian, CoreXY, Delta і консольний</li>
+  <li>50 замовлень, ремонти, кар'єра в сервісі, майстерня-ферма друку</li>
+  <li>Слайсер, прошивка, пластики PLA, PETG, ABS і TPU</li>
+  <li>Вільний режим із власними STL-моделями</li>
+</ul>
+<p>Гра безкоштовна: <a href="https://serhiiden.itch.io/3d-printer-constructor">грай у браузері або завантаж для Windows і Linux на itch.io</a>. · <a href="privacy/">Політика конфіденційності</a></p>
+</div>
+</main>
+</body>
+</html>
